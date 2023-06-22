@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Meteora</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <section class="header__responsive">
+            <nav class="header__responsive-nav">
+                <a href="#" class="logo"><img src="img/logo-mobile.svg" alt="Ícone Menu"></a>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-list-link">Home</a></li>
+                    <li><a href="#" class="nav-list-link">Nossas lojas</a></li>
+                    <li><a href="#" class="nav-list-link">Novidades</a></li>
+                    <li><a href="#" class="nav-list-link">Promoções</a></li>
+                </ul>
+                <div class="mobile-menu-icon">
+                    <button class="mobile-menu-icon-button" onclick="menuShow()"><img src="img/icone-menu.svg" alt="" class="mobile-menu-img"></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul class="nav-list-mobile">
+                    <button class="mobile-menu-icon-button" onclick="menuShow()"><li><a href="#" class="nav-mobile-link-img"><img src="img/texte.svg" alt=""></a></li></button>
+                    <li><a href="#" class="nav-mobile-link-home">Home</a></li>
+                    <li><a href="#" class="nav-mobile-link">Nossas lojas</a></li>
+                    <li><a href="#" class="nav-mobile-link">Novidades</a></li>
+                    <li><a href="#" class="nav-mobile-link">Promoções</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="header__search">
+            <input type="search" class="search__input" placeholder="Digite o produto">
+            <button class="search__button">Search</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="banner">
+            <div class="banner__search">
+                <input type="search" class="search__input" placeholder="Digite o produto">
+                <button class="search__button">Search</button>
+            </div>
+            <div class="banner__pic">
+                <img src="img/banner.svg" alt="Banner principal da Meteora, moda de impacto positivo" class="banner__pic-mobile">
+                <img src="img/banner-tablet.png" alt="Banner principal da Meteora, moda de impacto positivo" class="banner__pic-tablet">
+                <img src="img/banner-desktop.png" alt="Banner principal da Meteora, moda de impacto positivo" class="banner__pic-desktop">
+            </div>
+        </section>
+        <section class="items">
+            <h2 class="items__title">Busque por categoria:</h2>
+            <div class="items__box">
+                <div class="items__box-item">
+                    <img src="img/camiseta.png" alt="" class="items__box-img">
+                    <h4 class="items__box-text">Camisetas</h4>
+                </div>
+                <div class="items__box-item">
+                    <img src="img/bolsa.png" alt="" class="items__box-img">
+                    <h4 class="items__box-text">Bolsas</h4>
+                </div>
+                <div class="items__box-item">
+                    <img src="img/calcado.png" alt="" class="items__box-img">
+                    <h4 class="items__box-text">Calçados</h4>
+                </div>
+                <div class="items__box-item">
+                    <img src="img/calca.png" alt="" class="items__box-img">
+                    <h4 class="items__box-text">Calças</h4>
+                </div>
+                <div class="items__box-item">
+                    <img src="img/casaco.png" alt="" class="items__box-img">
+                    <h4 class="items__box-text">Casacos</h4>
+                </div>
+                <div class="items__box-item">
+                    <img src="img/oculos.png" alt="" class="items__box-img">
+                    <h4 class="items__box-text">Óculos</h4>
+                </div>
+            </div>
+        </section>
+        <section class="trending">
+            <h2 class="trending__title">Produtos que estão bombando!</h2>
+            <div class="trending__card">
+                <img src="img/card-camiseta.png" alt="Modelo com camiseta conforto" class="trending__card-img">
+                <h3 class="trending__card-title">Camiseta Conforto</h3>
+                <p class="trending__card-paragraph">
+                    Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.
+                </p>
+                <p class="trending__card-price">
+                    R$ 70,00
+                </p>
+                <a href="#" class="trending__card-button">Ver mais</a>
+            </div>
+            <div class="trending__card">
+                <img src="img/card-calca.png" alt="Modelo com calça de alfaiataria" class="trending__card-img">
+                <h3 class="trending__card-title">Calça Alfaiataria</h3>
+                <p class="trending__card-paragraph">
+                    Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!
+                </p>
+                <p class="trending__card-price">
+                    R$ 180,00
+                </p>
+                <a href="#" class="trending__card-button">Ver mais</a>
+            </div>
+            <div class="trending__card">
+                <img src="img/card-tenis.png" alt="Tênis Chunky" class="trending__card-img">
+                <h3 class="trending__card-title">Tênis Chunky</h3>
+                <p class="trending__card-paragraph">
+                    Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.
+                </p>
+                <p class="trending__card-price">
+                    R$ 250,00
+                </p>
+                <a href="#" class="trending__card-button">Ver mais</a>
+            </div>
+            <div class="trending__card">
+                <img src="img/card-jaqueta.png" alt="Modelo com jaqueta jeans" class="trending__card-img">
+                <h3 class="trending__card-title">Jaqueta Jeans</h3>
+                <p class="trending__card-paragraph">
+                    Modelo unissex oversized com gola de camurça. Atemporal e autêntica!
+                </p>
+                <p class="trending__card-price">
+                    R$ 150,00
+                </p>
+                <a href="#" class="trending__card-button">Ver mais</a>
+            </div>
+            <div class="trending__card">
+                <img src="img/card-oculos.png" alt="Modelo com óculos redondo" class="trending__card-img">
+                <h3 class="trending__card-title">Óculos Redondo</h3>
+                <p class="trending__card-paragraph">
+                    Armação metálica em grafite com lentes arredondadas. Sem erro!
+                </p>
+                <p class="trending__card-price">
+                    R$ 120,00
+                </p>
+                <a href="#" class="trending__card-button">Ver mais</a>
+            </div>
+            <div class="trending__card">
+                <img src="img/card-bolsa.png" alt="Modelo com bolsa de couro" class="trending__card-img">
+                <h3 class="trending__card-title">Bolsa coringa</h3>
+                <p class="trending__card-paragraph">
+                    Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!
+                </p>
+                <p class="trending__card-price">
+                    R$ 120,00
+                </p>
+                <a href="#" class="trending__card-button">Ver mais</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="payment">
+            <h2 class="payment__title">Conheça todas as nossas facilidades</h2>
+            <div class="payment__items">
+                <div class="payment__card">
+                    <div class="payment__card-symbol">
+                        <img src="img/x-diamond.svg" alt="" class="payment__card-symbol-img">
+                    </div>
+                    <div class="payment__card-text">
+                        <h4 class="payment__card-text-title">PAGUE PELO PIX</h4>
+                        <p class="payment__card-text-paragraph">Ganhe 5% OFF em pagamentos via PIX</p>
+                    </div>
+                </div>
+                <div class="payment__card">
+                    <div class="payment__card-symbol">
+                        <img src="img/arrow-repeat.svg" alt="" class="payment__card-symbol-img">
+                    </div>
+                    <div class="payment__card-text">
+                        <h4 class="payment__card-text-title">TROCA GRÁTIS</h4>
+                        <p class="payment__card-text-paragraph">Fique livre para trocar em até 30 dias.</p>
+                    </div>
+                </div>
+                <div class="payment__card">
+                    <div class="payment__card-symbol">
+                        <img src="img/flower.svg" alt="" class="payment__card-symbol-img">
+                    </div>
+                    <div class="payment__card-text">
+                        <h4 class="payment__card-text-title">SUSTENTABILIDADE</h4>
+                        <p class="payment__card-text-paragraph">Moda responsável, que respeita o meio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <p class="newsletter__text">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
+            <div class="newsletter__mail">
+                <input type="email" placeholder="Digite seu e-mail" class="newsletter__mail-input">
+                <button class="newsletter__mail-button">Enviar</button>
+            </div>
+        </section>
+        <section class="footer">
+            <p class="footer__text">2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

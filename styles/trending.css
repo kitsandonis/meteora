@@ -1,0 +1,74 @@
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending__title {
+    font-size: 28px;
+    color: var(--cinza);
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.trending__card {
+    width: 323px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+}
+
+.trending__card-title {
+    font-weight: 700;
+    color: var(--cinza);
+    padding: 1em 0.8em;
+}
+
+.trending__card-price {
+    font-weight: 700;
+    color: var(--cinza);
+    padding: 1em 0.8em 1.5em 0.8em;
+}
+
+.trending__card-paragraph {
+    font-weight: 400;
+    color: var(--cinza);
+    font-size: 13px;
+    padding-left: 1em;
+}
+
+.trending__card-button {
+    text-decoration: none;
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 0.5em 1em;
+    margin-left: 0.8em;
+}
+
+@media screen and (min-width: 768px) {  
+
+    .trending {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0 2em;
+    }
+
+    .trending__title {
+        display: block;
+        width: 100%;
+    }
+
+    .trending__card-img {
+        height: 380px;
+        width: inherit;
+    }
+}
+
+@media screen and (min-width: 1440px) { 
+    .trending {
+        margin: 4em;
+        gap: 0 3em;
+    }
+}

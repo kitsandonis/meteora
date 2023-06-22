@@ -1,0 +1,27 @@
+@import url("styles/header.css");
+@import url("styles/main.css");
+@import url("styles/items.css");
+@import url("styles/trending.css");
+@import url("styles/payment.css");
+@import url("styles/newsletter.css");
+@import url("styles/footer.css");
+
+:root {
+    --branco: #ffffff;
+    --verde: #DAFF01;
+    --roxo: #9353FF;
+    --lilas: #895FB5;
+    --cinza: #212529;
+    --preto: #000000;
+    --cinza-menu: #343A40;
+    --fonte-principal: "Inter";
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--branco);
+    overflow-x: hidden;
+}
+
